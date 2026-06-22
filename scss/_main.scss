@@ -1,0 +1,14 @@
+// BASE
+@use "partials/base/tipografia";
+@use "partials/base/reset";
+// COMPONENTS
+
+@use "partials/components/buttons";
+
+// UTILITIES
+@use "partials/utilities/variables";
+@use "partials/utilities/responsive";
+@use "./partials/utilities/mixin";
+@use "./partials/utilities/extends";
+
+// LAYOUT
