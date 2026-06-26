@@ -1,0 +1,9 @@
+@use "../utilities/variables";
+
+@mixin card-gral($padding: 1.5rem) {
+  background-color: variables.$color-white;
+  border: 1px solid rgba(variables.$color-primary, 0.15);
+  border-radius: variables.$border-general;
+  box-shadow: variables.$sombra;
+  padding: $padding;
+}

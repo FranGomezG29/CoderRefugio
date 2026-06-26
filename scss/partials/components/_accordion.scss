@@ -1,0 +1,15 @@
+@use "../utilities/variables";
+@use "../utilities/mixin";
+
+.accordion-item {
+  background-color: variables.$color-accent;
+  border-color: rgba(variables.$color-accent, 0.2);
+}
+
+.accordion-body {
+  background-color: variables.$color-white;
+}
+.accordion-button {
+  background-color: variables.$color-white;
+  color: variables.$color-primary;
+}

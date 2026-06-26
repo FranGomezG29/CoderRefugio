@@ -1,0 +1,22 @@
+@use "../utilities/variables";
+@use "../utilities/mixin";
+.card-pet {
+  height: 20rem;
+  width: 25rem;
+  background-color: variables.$color-light;
+  border: 0;
+  border-radius: variables.$border-general;
+  .card-img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    background-color: variables.$color-light;
+    border-radius: variables.$border-general variables.$border-general 0 0;
+  }
+}
+.nombre-card {
+  color: variables.$color-secondary;
+  font-weight: 800;
+}
+.adp-card {
+  @include mixin.card-gral;
+}
