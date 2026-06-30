@@ -1,5 +1,5 @@
 @use "../utilities/variables";
-// Reset basico 
+// Reset basico
 
 * {
   margin: 0;
@@ -12,8 +12,11 @@ li {
 
 a {
   text-decoration: none;
+  
 }
 
-.bg-general {
-  background-color: variables.$color-primary;
-}
+.bg-general { background-color: variables.$color-primary;}  
+
+
+
+

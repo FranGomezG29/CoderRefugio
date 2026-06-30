@@ -13,25 +13,23 @@
 
 <body>
     <header>
-
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg bg-general  fixed-top shadow-sm"
             aria-label="Navegación principal">
             <div class="container">
-                <a class="navbar-brand fw-bold" href="index.html">REFUGIO</a>
+                <a class="navbar-brand fw-bold" href="../index.html">REFUGIO</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal"
                     aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Abrir navegación">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarPrincipal">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link active" aria-current="page"
                                 href="./nosotros.html">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link " href="./animales.html">Animales</a></li>
-                        <li class="nav-item"><a class="nav-link " href="./adopciones.html">Adopciones</a></li>
-                        <li class="nav-item"><a class="nav-link " aria-current="page"
-                                href="./contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./animales.html">Animales</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./adopciones.html">Adopciones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -40,21 +38,21 @@
     <main class="bg-general">
 
         
-        <section class="cabecera bg-general" >
-            <div class="container bg-general">
-                <p >Sobre Nosotros</p>
+        <section class="cabecera bg-general">
+            <div class="container">
+                <p class="section-kicker">Sobre Nosotros</p>
                 <h1>Nacimos para dar segundas oportunidades.</h1>
-                <p >refugio reúne voluntarios, profesionales y familias de tránsito para cuidar animales hasta
+                <p class="lead">refugio reúne voluntarios, profesionales y familias de tránsito para cuidar animales hasta
                     que encuentren su hogar definitivo.</p>
             </div>
         </section>
 
-        <section  >
-            <div  >
+        <section class="py-5 bg-general">
+            <div class="container">
                 
-                <div>
-                    <div>
-                        <img src="../img/equipo.avif" alt="Equipo del refugio ">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-6">
+                        <img class="img-fluid rounded" src="../img/equipo.avif" alt="Equipo del refugio ">
                     </div>
                     <div class="col-lg-6">
                         <h2 id="historia-title">Nuestra historia</h2>
@@ -69,21 +67,21 @@
             </div>
         </section>
 
-        <section  >
+        <section class="py-5 bg-general">
             <div class="container">
-                <div class="row">
-                    <article  >
-                      
-                        <div >
-                            <h2 >Misión</h2>
+                <div class="row g-4">
+                    <article class="col-md-6">
+                        <!-- Panel propio: se estiliza desde SCSS, no es componente Bootstrap -->
+                        <div class="adp-card h-100">
+                            <h2 class="h4">Misión</h2>
                             <p>Promover el bienestar animal mediante rescates responsables, educación comunitaria y
                                 adopciones conscientes.</p>
                         </div>
                     </article>
-                    <article>
-                        
-                        <div >
-                            <h2>Visión</h2>
+                    <article class="col-md-6">
+                        <!-- Panel propio: se estiliza desde SCSS, no es componente Bootstrap -->
+                        <div class="adp-card h-100">
+                            <h2 class="h4">Visión</h2>
                             <p>Construir una comunidad donde cada animal reciba cuidado, respeto y una familia preparada
                                 para acompañarlo.</p>
                         </div>
@@ -92,31 +90,31 @@
             </div>
         </section>
 
-        <section >
+        <section class="py-5 bg-general">
             <div class="container">
-                <div >
-                    <p >Nuestro compromiso</p>
-                    <h2 >Valores que guían cada decisión</h2>
+                <div class="text-center mb-4">
+                    <p class="section-kicker">Nuestro compromiso</p>
+                    <h2>Valores que guían cada decisión</h2>
                 </div>
-                <div >
-                    <article >
-                       
-                        <div >
-                            <h3 >Respeto</h3>
+                <div class="row g-4">
+                    <article class="col-md-4">
+                        
+                        <div class="adp-card h-100">
+                            <h3 class="h5">Respeto</h3>
                             <p>Cuidamos los tiempos, necesidades y personalidad de cada animal.</p>
                         </div>
                     </article>
-                    <article >
-                       
-                        <div >
-                            <h3 >Responsabilidad</h3>
+                    <article class="col-md-4">
+                        
+                        <div class="adp-card h-100">
+                            <h3 class="h5">Responsabilidad</h3>
                             <p>Evaluamos cada adopción para asegurar bienestar a largo plazo.</p>
                         </div>
                     </article>
-                    <article  >
+                    <article class="col-md-4">
                         
-                        <div  >
-                            <h3 >Comunidad</h3>
+                        <div class="adp-card h-100">
+                            <h3 class="h5">Comunidad</h3>
                             <p>Trabajamos junto a voluntarios, donantes y familias adoptantes.</p>
                         </div>
                     </article>
@@ -125,40 +123,34 @@
         </section>
     </main>
 
-
-
-
-    
-     <!-- Footer  -->
-   <footer class="bg-footer" >
-        <div class="container bg-footer">
-            <div>
-                <div>
+    <!-- Footer -->
+    <footer class="bg-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
                     <h2>Refugio</h2>
                     <p>Refugio ficticio creado como proyecto final de Desarrollo Web.</p>
                 </div>
-                <div>
+                <div class="col-md-4">
                     <h2>Navegación</h2>
-                    <ul>
-                        <li><a href="/index.html">Inicio</a></li>
-                        <li><a href="/pages/nosotros.html">Nosotros</a></li>
-                        <li><a href="/pages/animales.html">Animales en adopción</a></li>
-                        <li><a href="/pages/adopciones.html">Proceso de adopción</a></li>
-                        <li><a href="/pages/contacto.html">Contacto</a></li>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./nosotros.html">Nosotros</a></li>
+                        <li><a href="./animales.html">Animales en adopción</a></li>
+                        <li><a href="./adopciones.html">Proceso de adopción</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="col-md-4">
                     <h2>Contacto</h2>
                     <p>Calle Esperanza 123, Cordoba</p>
                     <p>refugio@Gmail.com</p>
                     <p>Lunes a Viernes de 10 a 18 hs</p>
-
                 </div>
             </div>
         </div>
         <hr>
-        <p>© 2026 refugio. Todos los derechos reservados.</p>
-        </div>
+        <p class="text-center mb-0">© 2026 refugio. Todos los derechos reservados.</p>
     </footer>
     <!-- JavaScript de Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

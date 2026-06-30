@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopciones</title>
     <!-- Bootstrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- CSS -->
@@ -12,18 +13,17 @@
 
 <body>
     <header>
-
-        <!-- Navbar  todas las páginas -->
+        <!-- Navbar  -->
         <nav class="navbar navbar-expand-lg bg-general  fixed-top shadow-sm" aria-label="Navegación principal">
             <div class="container">
-                <a class="navbar-brand fw-bold" href="index.html">REFUGIO</a>
+                <a class="navbar-brand fw-bold" href="../index.html">REFUGIO</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal"
                     aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Abrir navegación">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarPrincipal">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="/index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
                         <li class="nav-item"><a class="nav-link" href="./animales.html">Animales</a></li>
                         <li class="nav-item"><a class="nav-link active" aria-current="page"
@@ -35,8 +35,14 @@
         </nav>
     </header>
     <main>
-
-
+        
+        <section class="cabecera bg-general">
+            <div class="container">
+                <p class="section-kicker">Proceso de adopción</p>
+                <h1>Adoptar es una decisión para toda la vida.</h1>
+                <p class="lead">Nuestro proceso busca que cada familia y cada animal sean compatibles, respetando tiempos, necesidades y cuidados.</p>
+            </div>
+        </section>
 
         <section class="py-5 bg-general">
             <div class="container">
@@ -47,35 +53,35 @@
 
                 <div class="row g-4">
                     <article class="col-md-6 col-lg-3">
-
+                        
                         <div class="adp-card h-100">
                             <span class="adp-num">1</span>
                             <h3 class="h5">Elegí una mascota</h3>
-                            <p>elegir mascota.</p>
+                            <p>Revisá los perfiles y elegí el animal que se adapte a tu hogar.</p>
                         </div>
                     </article>
                     <article class="col-md-6 col-lg-3">
-
+                        
                         <div class="adp-card h-100">
                             <span class="adp-num">2</span>
                             <h3 class="h5">Completá el formulario</h3>
-                            <p>contanos sobre vos.</p>
+                            <p>Contanos sobre vos, tu familia y tu hogar.</p>
                         </div>
                     </article>
                     <article class="col-md-6 col-lg-3">
-
+                        
                         <div class="adp-card h-100">
                             <span class="adp-num">3</span>
                             <h3 class="h5">Coordiná una visita</h3>
-                            <p>encuentro.</p>
+                            <p>Organizamos un encuentro para conocer al animal.</p>
                         </div>
                     </article>
                     <article class="col-md-6 col-lg-3">
-
+                        
                         <div class="adp-card h-100">
                             <span class="adp-num">4</span>
                             <h3 class="h5">Seguimiento</h3>
-                            <p>acompañadp.</p>
+                            <p>Acompañamos la adaptación durante las primeras semanas.</p>
                         </div>
                     </article>
                 </div>
@@ -90,117 +96,84 @@
                             <h2 id="faq-title">Dudas antes de adoptar</h2>
                         </div>
 
-
-                        <div class="accordion" id="accordionExample">
+                        <div class="accordion" id="faqAdopciones">
                             <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqUno" aria-expanded="false" aria-controls="faqUno">
                                         Accordion Item #1
                                     </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse "
-                                    data-bs-parent="#accordionExample">
+                                </h3>
+                                <div id="faqUno" class="accordion-collapse collapse" data-bs-parent="#faqAdopciones">
                                     <div class="accordion-body">
-                                        <strong>This is the first item’s accordion body.</strong> It is shown by
-                                        default, until the
+                                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
                                         collapse plugin adds the appropriate classes that we use to style each element.
-                                        These
-                                        classes control the overall appearance, as well as the showing and hiding via
-                                        CSS
-                                        transitions. You can modify any of this with custom CSS or overriding our
-                                        default variables.
-                                        It’s also worth noting that just about any HTML can go within the
-                                        <code>.accordion-body</code>, though the transition does limit overflow.
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h2 class="accordion-header">
+                                <h3 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        data-bs-target="#faqDos" aria-expanded="false" aria-controls="faqDos">
                                         Accordion Item #2
                                     </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionExample">
+                                </h3>
+                                <div id="faqDos" class="accordion-collapse collapse" data-bs-parent="#faqAdopciones">
                                     <div class="accordion-body">
-                                        <strong>This is the second item’s accordion body.</strong> It is hidden by
-                                        default, until
-                                        the collapse plugin adds the appropriate classes that we use to style each
-                                        element. These
-                                        classes control the overall appearance, as well as the showing and hiding via
-                                        CSS
-                                        transitions. You can modify any of this with custom CSS or overriding our
-                                        default variables.
-                                        It’s also worth noting that just about any HTML can go within the
-                                        <code>.accordion-body</code>, though the transition does limit overflow.
+                                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                                        the collapse plugin adds the appropriate classes that we use to style each element.
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item">
-                                <h2 class="accordion-header">
+                                <h3 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
+                                        data-bs-target="#faqTres" aria-expanded="false" aria-controls="faqTres">
                                         Accordion Item #3
                                     </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionExample">
+                                </h3>
+                                <div id="faqTres" class="accordion-collapse collapse" data-bs-parent="#faqAdopciones">
                                     <div class="accordion-body">
-                                        <strong>This is the third item’s accordion body.</strong> It is hidden by
-                                        default, until the
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
                                         collapse plugin adds the appropriate classes that we use to style each element.
-                                        These
-                                        classes control the overall appearance, as well as the showing and hiding via
-                                        CSS
-                                        transitions. You can modify any of this with custom CSS or overriding our
-                                        default variables.
-                                        It’s also worth noting that just about any HTML can go within the
-                                        <code>.accordion-body</code>, though the transition does limit overflow.
                                     </div>
-
-
                                 </div>
-
                             </div>
-
-
                         </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
     <!-- Footer  -->
     <footer class="bg-footer">
-        <div class="container bg-footer">
-            <div>
-                <div>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
                     <h2>Refugio</h2>
                     <p>Refugio creado como proyecto final de Desarrollo Web.</p>
                 </div>
-                <div>
+                <div class="col-md-4">
                     <h2>Navegación</h2>
-                    <ul>
-                        <li><a href="/index.html">Inicio</a></li>
-                        <li><a href="/pages/nosotros.html">Nosotros</a></li>
-                        <li><a href="/pages/animales.html">Animales en adopción</a></li>
-                        <li><a href="/pages/adopciones.html">Proceso de adopción</a></li>
-                        <li><a href="/pages/contacto.html">Contacto</a></li>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./nosotros.html">Nosotros</a></li>
+                        <li><a href="./animales.html">Animales en adopción</a></li>
+                        <li><a href="./adopciones.html">Proceso de adopción</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
                     </ul>
                 </div>
-                <div>
+                <div class="col-md-4">
                     <h2>Contacto</h2>
                     <p>Calle Esperanza 123, Cordoba</p>
                     <p>refugio@Gmail.com</p>
                     <p>Lunes a Viernes de 10 a 18 hs</p>
-
                 </div>
             </div>
         </div>
         <hr>
-        <p>© 2026 refugio. Todos los derechos reservados.</p>
-        </div>
+        <p class="text-center mb-0">© 2026 refugio. Todos los derechos reservados.</p>
     </footer>
 
     <!-- JavaScript de Bootstrap -->
